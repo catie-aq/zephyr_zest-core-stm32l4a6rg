@@ -1,0 +1,55 @@
+/*
+ * Copyright (c) 2023 CATIE
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include "6tron-header.h"
+
+/ {
+    sixtron_connector_1: sixtron_connector_1 {
+        compatible = "sixtron-bus";
+        #gpio-cells = <2>;
+        gpio-map-mask = <0xffffffff 0xffffffc0>;
+        gpio-map-pass-thru = <0 0x3f>;
+        gpio-map = <P1_CAN_RX 0 &gpiob 12 0>,
+                   <P1_CAN_TX 0 &gpiob 13 0>,
+                   <P1_I2C_SDA 0 &gpioc 0 0>,
+                   <P1_I2C_SCL 0 &gpioc 1 0>,
+                   <P1_UART_RX 0 &gpioa 3 0>,
+                   <P1_UART_TX 0 &gpioa 2 0>,
+                   <P1_SPI_MOSI 0 &gpiob 15 0>,
+                   <P1_SPI_MISO 0 &gpiob 14 0>,
+                   <P1_SPI_SCK 0 &gpiob 10 0>,
+                   <P1_SPI_SS 0 &gpiob 2 0>,
+                   <P1_PWM1 0 &gpioa 10 0>,
+                   <P1_PWM2 0 &gpioa 9 0>,
+                   <P1_PWM3 0 &gpiob 0 0>,
+                   <P1_ICAP 0 &gpiob 1 0>,
+                   <P1_WKUP 0 &gpioc 13 0>,
+                   <P1_ADC1 0 &gpioc 2 0>,
+                   <P1_ADC2 0 &gpioc 3 0>,
+                   <P1_ADC3 0 &gpioa 0 0>,
+                   <P1_ADC4 0 &gpioa 1 0>,
+                   <P1_DAC 0 &gpioa 5 0>,
+                   <P1_DIO1 0 &gpiob 5 0>,
+                   <P1_DIO2 0 &gpiob 4 0>,
+                   <P1_DIO3 0 &gpiod 2 0>,
+                   <P1_DIO4 0 &gpioc 12 0>,
+                   <P1_DIO5 0 &gpioa 8 0>,
+                   <P1_DIO6 0 &gpioc 1 0>,
+                   <P1_DIO7 0 &gpioa 6 0>,
+                   <P1_DIO8 0 &gpioa 7 0>,
+                   <P1_DIO9 0 &gpioa 4 0>,
+                   <P1_DIO10 0 &gpioh 1 0>,
+                   <P1_DIO11 0 &gpioh 0 0>,
+                   <P1_DIO12 0 &gpiob 7 0>,
+                   <P1_DIO13 0 &gpioc 6 0>,
+                   <P1_DIO14 0 &gpioc 7 0>,
+                   <P1_DIO15 0 &gpioc 8 0>,
+                   <P1_DIO16 0 &gpioc 9 0>,
+                   <P1_DIO17 0 &gpioc 11 0>,
+                   <P1_DIO18 0 &gpiob 6 0>,
+                   <P1_DIO19 0 &gpiob 8 0>,
+                   <P1_DIO20 0 &gpiob 9 0>;
+    };
+};
