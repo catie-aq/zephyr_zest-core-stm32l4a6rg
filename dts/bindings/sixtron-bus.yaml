@@ -1,0 +1,50 @@
+# Copyright (c) 2023 CATIE
+# SPDX-License-Identifier: Apache-2.0
+
+description: |
+    GPIO pins exposed on 6TRON connector.
+
+        55 DIO36                  CAN_RX    0
+        54 DIO35                  CAN_TX    1
+        53 DIO34                  I2C1_SCL  2
+        52 DIO33                  I2C1_SDA  3
+        51 DIO32                  UART_RX   4
+        50 DIO31                  UART_TX   5
+        49 DIO30                  SPI_MOSI  6
+        48 DIO29                  SPI_MISO  7
+        47 DIO28                  SPI_SCK   8
+        46 DIO27                  SPI_SS    9
+        45 DIO26                  PWM1      10
+        44 DIO25                  PWM2      11
+        43 DIO24                  PWM3      12
+        42 DIO23                  ICAP      13
+        41 DIO22                  WKUP      14
+        40 DIO21                  DIO1      20
+        39 DIO20                  DIO2      21
+        38 DIO19                  DIO3      22
+        -  VREF                   DIO4      23
+        -  GND                    EXT_NRST  -
+        -  GND                    ADC1      15
+        37 DIO18                  ADC2      16
+        36 DIO17                  ADC3      17
+        35 DIO16                  ADC4      18
+        34 DIO15                  DAC       19
+        33 DIO14                  VBAT_EN1  -
+        32 DIO13                  VBAT_EN1  -
+        -  VIN                    VIN       -
+        -  VIN                    VIN       -
+        -  GND                    GND       -
+        -  GND                    GND       -
+        31 DIO12                  DIO5      24
+        30 DIO11                  GND       -
+        29 DIO10                  DI06      25
+        28 DIO9                   DIO7      26
+        -  VIN_EN                 DIO8      27
+        -  VHV                    VHV       -
+        -  VHV                    VHV       -
+        -  VJACK                  VJACK     -
+        -  VJACK                  VJACK     -
+
+compatible: "sixtron-bus"
+
+include: [gpio-nexus.yaml, base.yaml]
