@@ -53,3 +53,9 @@
                    <P1_DIO20 0 &gpiob 9 0>;
     };
 };
+
+sixtron_i2c: &i2c3 {};
+sixtron_uart: &usart2 {};
+sixtron_spi: &spi2 {};
+sixtron_adc: &adc1 {};
+sixtron_dac: &dac1 {};
