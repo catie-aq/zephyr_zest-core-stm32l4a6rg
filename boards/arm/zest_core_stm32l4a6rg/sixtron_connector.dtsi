@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#include "6tron-header.h"
+#include "sixtron-header.h"
 
 / {
     sixtron_connector_1: sixtron_connector_1 {
