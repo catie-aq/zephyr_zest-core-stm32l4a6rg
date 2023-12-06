@@ -7,7 +7,7 @@
 /dts-v1/;
 #include <st/l4/stm32l4a6Xg.dtsi>
 #include <st/l4/stm32l4a6rgtx-pinctrl.dtsi>
-#include "6tron_connector.dtsi"
+#include "sixtron_connector.dtsi"
 
 / {
 	model = "CATIE Zest Core STM32l4A6RG board";
