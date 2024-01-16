@@ -41,17 +41,17 @@
 	};
 };
 
-&clk_hsi {
+&clk_msi {
 	status = "okay";
 };
 
 &pll {
 	div-m = <1>;
-	mul-n = <10>;
+	mul-n = <40>;
 	div-p = <7>;
 	div-q = <2>;
 	div-r = <2>;
-	clocks = <&clk_hsi>;
+	clocks = <&clk_msi>;
 	status = "okay";
 };
 
