@@ -94,13 +94,13 @@
 &timers1 {
 	status = "okay";
 
-	pwm1: pwm1 {
+	pwm1: pwm {
 		pinctrl-0 = <&tim1_ch3_pa10>;
 		pinctrl-names = "default";
 		status = "okay";
 	};
 
-	pwm2: pwm2 {
+	pwm2: pwm {
 		pinctrl-0 = <&tim1_ch2_pa9>;
 		pinctrl-names = "default";
 		status = "okay";
