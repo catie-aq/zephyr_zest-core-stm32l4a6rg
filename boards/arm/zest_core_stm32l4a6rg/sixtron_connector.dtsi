@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#include "sixtron-header.h"
+#include <zephyr/dt-bindings/gpio/sixtron-header.h>
 
 / {
     sixtron_connector_1: sixtron_connector_1 {
