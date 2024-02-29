@@ -1,0 +1,20 @@
+identifier: zest_core_stm32l4a6rg
+name: Zest_Core_STM32L4A6RG
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+ram: 320
+flash: 1024
+supported:
+  - gpio
+  - i2c
+  - spi
+  - pwm
+  - counter
+testing:
+  ignore_tags:
+    - net
+    - bluetooth
+vendor: catie
