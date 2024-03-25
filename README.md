@@ -22,6 +22,7 @@ The Zephyr Zest Core STM32L4A6RG board configuration supports the following hard
 | GPIO      | on-chip    | gpio                                           |
 | I2C       | on-chip    | i2c                                            |
 | LPTIM     | on-chip    | timer                                          |
+| LPUART    | on-chip    | serial                                         |
 | NVIC      | on-chip    | nested vector interrupt controller             |
 | PINCTRL   | on-chip    | pinctrl                                        |
 | PWM       | on-chip    | pwm                                            |
@@ -32,6 +33,7 @@ The Zephyr Zest Core STM32L4A6RG board configuration supports the following hard
 | SMBUS     | on-chip    | smbus                                          |
 | SPI       | on-chip    | spi                                            |
 | UART      | on-chip    | serial                                         |
+| USART     | on-chip    | serial                                         |
 | USB       | on-chip    | usb/udc (compatible OTGFS)                     |
 | VBAT      | on-chip    | sensor/stm32_vbat                              |
 | VREF      | on-chip    | sensor/stm32_vref                              |
