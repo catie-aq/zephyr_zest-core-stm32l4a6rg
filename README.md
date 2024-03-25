@@ -6,34 +6,34 @@
 
 The Zephyr Zest Core STM32L4A6RG board configuration supports the following hardware features:
 
-| Interface | Controller | Driver/Component                                |
-| :-------- | :--------- | :---------------------------------------------- |
-| ADC       | on-chip    | ADC controller                                  |
-| AES       | on-ship    | crypto                                          |
-| CAN       | on-ship    | CAN controller                                  |
-| COUNTER   | on-ship    | timers                                          |
-| DAC       | on-chip    | DAC controller                                  |
-| DIE-TEMP  | on-chip    | internal die temperature sensor                 |
-| DMA       | on-chip    | DMA controller                                  |
-| EXTI      | on-ship    | external interrupt controller                   |
-| FLASH     | on-chip    | flash memory                                    |
-| GPIO      | on-chip    | gpio (using PINCTRL)                            |
-| I2C       | on-chip    | i2c controller                                  |
-| LPTIM     | on-chip    | low power timer / counter                       |
-| NVIC      | on-chip    | nested vector interrupt controller              |
-| PINCTRL   | on-chip    | pin controller                                  |
-| PWM       | on-chip    | timers                                          |
-| QSPI      | on-ship    | quad spi                                        |
-| RNG       | on-chip    | random number generator                         |
-| RTC       | on-chip    | real time clock                                 |
-| SDMMC     | on-chip    | memory storage controller (SD/SDIO/MMC)         |
-| SMBUS     | on-chip    | system management bus (using i2c)               |
-| SPI       | on-chip    | spi controller                                  |
-| UART      | on-chip    | uart or lpuart controller                       |
-| USB       | on-chip    | external "USB Device" port on Zest Core (OTGFS) |
-| VBAT      | on-chip    | monitoring battery voltage                      |
-| VREF      | on-chip    | internal voltage reference                      |
-| WATCHDOG  | on-chip    | independent watchdog, or system window watchdog |
+| Interface | Controller | Driver/Component                                           |
+| :-------- | :--------- | :--------------------------------------------------------- |
+| ADC       | on-chip    | adc                                                        |
+| AES       | on-ship    | crypto                                                     |
+| CAN       | on-ship    | can                                                        |
+| COUNTER   | on-ship    | counter                                                    |
+| DAC       | on-chip    | dac                                                        |
+| DIE-TEMP  | on-chip    | sensor/stm32_temp                                          |
+| DMA       | on-chip    | dma                                                        |
+| EXTI      | on-ship    | external interrupt controller                              |
+| FLASH     | on-chip    | flash                                                      |
+| GPIO      | on-chip    | gpio                                                       |
+| I2C       | on-chip    | i2c                                                        |
+| LPTIM     | on-chip    | timer                                                      |
+| NVIC      | on-chip    | nested vector interrupt controller                         |
+| PINCTRL   | on-chip    | pinctrl                                                    |
+| PWM       | on-chip    | pwm                                                        |
+| QSPI      | on-ship    | flash                                                      |
+| RNG       | on-chip    | entropy                                                    |
+| RTC       | on-chip    | rtc                                                        |
+| SDMMC     | on-chip    | disk                                                       |
+| SMBUS     | on-chip    | smbus                                                      |
+| SPI       | on-chip    | spi                                                        |
+| UART      | on-chip    | serial                                                     |
+| USB       | on-chip    | usb (OTGFS)                                                |
+| VBAT      | on-chip    | sensor/stm32_vbat                                          |
+| VREF      | on-chip    | sensor/stm32_vref                                          |
+| WATCHDOG  | on-chip    | watchdog (independent watchdog, or system window watchdog) |
 
 
 ## Usage
