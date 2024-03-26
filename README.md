@@ -35,6 +35,7 @@ The Zephyr Zest_Core_STM32L4A6RG board configuration supports the following hard
 | TIMER | on-chip | counter, pwm, timer |
 | UART      | on-chip    | serial                                         |
 | USART     | on-chip    | serial                                         |
+| USB | [CP2102N](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers) | console |
 | USBOTG_FS | on-chip    | usb                   |
 | VBAT      | on-chip    | sensor                              |
 | VREF      | on-chip    | sensor                              |
