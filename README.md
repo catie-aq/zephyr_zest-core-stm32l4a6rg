@@ -8,16 +8,15 @@ This module depends on:
 - [6TRON connector definition](https://github.com/catie-aq/zephyr_6tron-connector)
 ## Supported Features
 
-The Zephyr Zest Core STM32L4A6RG board configuration supports the following hardware features:
+The Zephyr Zest_Core_STM32L4A6RG board configuration supports the following hardware features:
 
 | Interface | Controller | Driver/Component                               |
 | :-------- | :--------- | :--------------------------------------------- |
 | ADC       | on-chip    | adc                                            |
 | AES       | on-ship    | crypto                                         |
 | CAN       | on-ship    | can                                            |
-| COUNTER   | on-ship    | counter                                        |
 | DAC       | on-chip    | dac                                            |
-| DIE-TEMP  | on-chip    | sensor/stm32_temp                              |
+| DIE-TEMP  | on-chip    | sensor                              |
 | DMA       | on-chip    | dma                                            |
 | EXTI      | on-ship    | interrupt_controller                           |
 | FLASH     | on-chip    | flash                                          |
@@ -25,21 +24,25 @@ The Zephyr Zest Core STM32L4A6RG board configuration supports the following hard
 | I2C       | on-chip    | i2c                                            |
 | LPTIM     | on-chip    | timer                                          |
 | LPUART    | on-chip    | serial                                         |
-| NVIC      | on-chip    | nested vector interrupt controller             |
+| NVIC      | on-chip    | arch/arm[^1] |
 | PINCTRL   | on-chip    | pinctrl                                        |
-| PWM       | on-chip    | pwm                                            |
 | QSPI      | on-ship    | flash                                          |
 | RNG       | on-chip    | entropy                                        |
 | RTC       | on-chip    | rtc                                            |
 | SDMMC     | on-chip    | disk                                           |
 | SMBUS     | on-chip    | smbus                                          |
 | SPI       | on-chip    | spi                                            |
+| TIMER | on-chip | counter, pwm, timer |
 | UART      | on-chip    | serial                                         |
 | USART     | on-chip    | serial                                         |
-| USB       | on-chip    | usb/udc (compatible OTGFS)                     |
+| USBOTG_FS | on-chip    | usb                   |
 | VBAT      | on-chip    | sensor                              |
 | VREF      | on-chip    | sensor                              |
-| WATCHDOG  | on-chip    | watchdog (independent `iwdg` or window `wwdg`) |
+| IWDG | on-chip | watchdog |
+| WWDG | on-chip | watchdog |
+
+[^1]: Implement from ARM bindings and not STM32 bindings
+
 See [STMicroelectronics vendor bindings](https://docs.zephyrproject.org/latest/build/dts/api/bindings.html#dt-vendor-st) for additional information.
 
 ## Usage
