@@ -16,7 +16,7 @@ The Zephyr Zest_Core_STM32L4A6RG board configuration supports the following hard
 | AES       | on-ship    | crypto                                         |
 | CAN       | on-ship    | can                                            |
 | DAC       | on-chip    | dac                                            |
-| DIE-TEMP  | on-chip    | sensor                              |
+| DIE_TEMP | on-chip    | sensor                              |
 | DMA       | on-chip    | dma                                            |
 | EXTI      | on-ship    | interrupt_controller                           |
 | FLASH     | on-chip    | flash                                          |
@@ -26,7 +26,7 @@ The Zephyr Zest_Core_STM32L4A6RG board configuration supports the following hard
 | LPUART    | on-chip    | serial                                         |
 | NVIC      | on-chip    | arch/arm[^1] |
 | PINCTRL   | on-chip    | pinctrl                                        |
-| QSPI      | on-ship    | flash                                          |
+| QSPI      | on-ship    | qspi, flash                                    |
 | RNG       | on-chip    | entropy                                        |
 | RTC       | on-chip    | rtc                                            |
 | SDMMC     | on-chip    | disk                                           |
