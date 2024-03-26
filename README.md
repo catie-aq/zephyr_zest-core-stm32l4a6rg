@@ -15,6 +15,7 @@ The Zephyr Zest_Core_STM32L4A6RG board configuration supports the following hard
 | ADC       | on-chip    | adc                                            |
 | AES       | on-ship    | crypto                                         |
 | CAN       | on-ship    | can                                            |
+| CLOCK | on-ship | clock_control |
 | DAC       | on-chip    | dac                                            |
 | DIE_TEMP | on-chip    | sensor                              |
 | DMA       | on-chip    | dma                                            |
