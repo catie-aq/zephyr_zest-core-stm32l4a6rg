@@ -6,6 +6,7 @@
 
 This module depends on:
 - [6TRON connector definition](https://github.com/catie-aq/zephyr_6tron-connector)
+
 ## Supported Features
 
 The Zephyr Zest_Core_STM32L4A6RG board configuration supports the following hardware features:
@@ -13,21 +14,21 @@ The Zephyr Zest_Core_STM32L4A6RG board configuration supports the following hard
 | Interface | Controller | Driver/Component                               |
 | :-------- | :--------- | :--------------------------------------------- |
 | ADC       | on-chip    | adc                                            |
-| AES       | on-ship    | crypto                                         |
-| CAN       | on-ship    | can                                            |
-| CLOCK | on-ship | clock_control |
+| AES       | on-chip    | crypto                                         |
+| CAN       | on-chip    | can                                            |
+| CLOCK | on-chip | clock_control |
 | DAC       | on-chip    | dac                                            |
 | DIE_TEMP | on-chip    | sensor                              |
 | DMA       | on-chip    | dma                                            |
-| EXTI      | on-ship    | interrupt_controller                           |
+| EXTI      | on-chip    | interrupt_controller                           |
 | FLASH     | on-chip    | flash                                          |
 | GPIO      | on-chip    | gpio                                           |
 | I2C       | on-chip    | i2c                                            |
 | LPTIM     | on-chip    | timer                                          |
 | LPUART    | on-chip    | serial                                         |
-| NVIC      | on-chip    | arch/arm[^1] |
+| NVIC      | on-chip    | arch/arm |
 | PINCTRL   | on-chip    | pinctrl                                        |
-| QSPI      | on-ship    | qspi, flash                                    |
+| QSPI      | on-chip    | qspi, flash                                    |
 | RNG       | on-chip    | entropy                                        |
 | RTC       | on-chip    | rtc                                            |
 | SDMMC     | on-chip    | disk                                           |
@@ -43,7 +44,6 @@ The Zephyr Zest_Core_STM32L4A6RG board configuration supports the following hard
 | IWDG | on-chip | watchdog |
 | WWDG | on-chip | watchdog |
 
-[^1]: Implement from ARM bindings and not STM32 bindings
 
 See [STMicroelectronics vendor bindings](https://docs.zephyrproject.org/latest/build/dts/api/bindings.html#dt-vendor-st) for additional information.
 
