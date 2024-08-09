@@ -1,0 +1,17 @@
+name: "Zephyr Zest_Core_STM32L4A6RG CI/CD"
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  twister-build:
+    uses: catie-aq/zephyr_workflows/.github/workflows/board.yml@main
+    with:
+      board: "zest_core_stm32l4a6rg"
+
+    secrets:
+      personal_access_token: ${{ secrets.PAT }}
