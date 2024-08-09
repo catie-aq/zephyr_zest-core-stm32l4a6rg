@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  twister-build:
+  board-test:
     uses: catie-aq/zephyr_workflows/.github/workflows/board.yml@main
     with:
       board: "zest_core_stm32l4a6rg"
