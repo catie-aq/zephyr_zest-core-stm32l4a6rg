@@ -92,22 +92,18 @@
 };
 
 &timers1 {
+	st,prescaler = <1000>;
 	status = "okay";
 
 	pwm1: pwm {
-		pinctrl-0 = <&tim1_ch3_pa10>;
-		pinctrl-names = "default";
-		status = "okay";
-	};
-
-	pwm2: pwm {
-		pinctrl-0 = <&tim1_ch2_pa9>;
+		pinctrl-0 = <&tim1_ch3_pa10 &tim1_ch2_pa9>;
 		pinctrl-names = "default";
 		status = "okay";
 	};
 };
 
 &timers3 {
+	st,prescaler = <1000>;
 	status = "okay";
 
 	pwm3: pwm {
