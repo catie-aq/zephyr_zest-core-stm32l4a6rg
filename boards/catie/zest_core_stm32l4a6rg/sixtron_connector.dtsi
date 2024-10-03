@@ -57,13 +57,13 @@
     sixtron_connector_1_pwms: sixtron-connector-1-pwms {
     	compatible = "pwm-leds";
 
-    	sixtron_connector_1_pwm1: pwm_dev_1 {
+    	sixtron_connector_1_pwm1: pwm-1 {
     		pwms = <&pwm1 3 1000000 PWM_POLARITY_NORMAL>;
     	};
-    	sixtron_connector_1_pwm2: pwm_dev_2 {
+    	sixtron_connector_1_pwm2: pwm-2 {
     		pwms = <&pwm1 2 1000000 PWM_POLARITY_NORMAL>;
     	};
-    	sixtron_connector_1_pwm3: pwm_dev_3 {
+    	sixtron_connector_1_pwm3: pwm-3 {
     		pwms = <&pwm3 3 1000000 PWM_POLARITY_NORMAL>;
     	};
     };
