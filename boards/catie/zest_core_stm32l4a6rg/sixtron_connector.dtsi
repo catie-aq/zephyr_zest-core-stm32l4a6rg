@@ -25,7 +25,7 @@
                    <PWM1 0 &gpioa 10 0>,
                    <PWM2 0 &gpioa 9 0>,
                    <PWM3 0 &gpiob 0 0>,
-                   <ICAP 0 &gpiob 1 0>,
+                   <ICAPT 0 &gpiob 1 0>,
                    <WKUP 0 &gpioc 13 0>,
                    <ADC1 0 &gpioc 2 0>,
                    <ADC2 0 &gpioc 3 0>,
