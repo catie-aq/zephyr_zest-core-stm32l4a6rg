@@ -71,10 +71,10 @@
     sixtron_connector_1_adc: sixtron-connector-1-adc {
         compatible = "sixtron-adc";
         #io-channel-cells = <1>;
-        io-channel-map = <ADC1 &adc1 3>,	/* ADC1 = PC2 -> ADC1  IN3 */
-                         <ADC2 &adc1 4>,	/* ADC2 = PC3 -> ADC1  IN4 */
-                         <ADC3 &adc1 5>,	/* ADC3 = PA0 -> ADC1  IN5 */
-                         <ADC4 &adc1 6>;    /* ADC4 = PA1 -> ADC1  IN6 */
+        io-channel-map = <ADC1 &adc1 3>,
+                         <ADC2 &adc1 4>,
+                         <ADC3 &adc1 5>,
+                         <ADC4 &adc1 6>;
     };
 };
 
