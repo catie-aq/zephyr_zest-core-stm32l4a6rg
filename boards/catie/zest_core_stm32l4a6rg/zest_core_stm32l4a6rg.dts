@@ -19,6 +19,7 @@
 		zephyr,shell-uart = &usart3;
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
+		zephyr,canbus = &can2;
 	};
 
 	leds {
@@ -102,6 +103,12 @@
 		pinctrl-names = "default";
 		status = "okay";
 	};
+};
+
+&can2 {
+    pinctrl-0 = <&can2_rx_pb5 &can2_tx_pb13>;
+    pinctrl-names = "default";
+    status = "okay";
 };
 
 &timers3 {
