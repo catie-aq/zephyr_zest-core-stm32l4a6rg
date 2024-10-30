@@ -59,9 +59,9 @@
         #pwm-cells = <3>;
         pwm-map-mask = <0xffffffff 0x0 0x0>;
         pwm-map-pass-thru = <0x0 0xffffffff 0x0f>;
-        pwm-map = <PWM1 0 0 &pwm1 3 0 0>,	/* PWM1 = */
-                  <PWM2 0 0 &pwm1 2 0 0>,	/* PWM2 = */
-                  <PWM3 0 0 &pwm3 3 0 0>;	/* PWM3 = */
+        pwm-map = <PWM1 0 0 &pwm1 3 0 0>,
+                  <PWM2 0 0 &pwm1 2 0 0>,
+                  <PWM3 0 0 &pwm3 3 0 0>;
     };
 
     sixtron_connector_1_adc: sixtron-connector-1-adc {
