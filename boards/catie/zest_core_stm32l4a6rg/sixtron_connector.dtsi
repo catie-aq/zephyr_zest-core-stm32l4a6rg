@@ -61,7 +61,8 @@
         pwm-map-pass-thru = <0x0 0xffffffff 0x0f>;
         pwm-map = <PWM1 0 0 &pwm1 3 0 0>,
                   <PWM2 0 0 &pwm1 2 0 0>,
-                  <PWM3 0 0 &pwm3 3 0 0>;
+                  <PWM3 0 0 &pwm3 3 0 0>,
+                  <ICAPT 0 0 &pwm3 4 0 0>;
     };
 
     sixtron_connector_1_adc: sixtron-connector-1-adc {
