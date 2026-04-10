@@ -37,7 +37,7 @@
                    <DIO3 0 &gpiod 2 0>,
                    <DIO4 0 &gpioc 12 0>,
                    <DIO5 0 &gpioa 8 0>,
-                   <DIO6 0 &gpioc 1 0>,
+                   <DIO6 0 &gpioc 10 0>,
                    <DIO7 0 &gpioa 6 0>,
                    <DIO8 0 &gpioa 7 0>,
                    <DIO9 0 &gpioa 4 0>,
