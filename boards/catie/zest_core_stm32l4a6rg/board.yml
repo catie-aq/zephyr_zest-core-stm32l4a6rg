@@ -1,5 +1,6 @@
 board:
   name: zest_core_stm32l4a6rg
+  full_name: Zest_Core_STM32L4A6RG
   vendor: catie
   socs:
     - name: stm32l4a6xx
